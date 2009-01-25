@@ -4,10 +4,11 @@
   <groupId>shopaas</groupId>
   <artifactId>shopaas</artifactId>
   <packaging>pom</packaging>
-  <name>shopaas-parent</name>
+  <name>Parent</name>
   <version>0.0.1-SNAPSHOT</version>
   <description>Shop As A Service</description>
   <modules>
     <module>web</module>
+    <module>web-integration-test</module>
   </modules>
 </project>
