@@ -7,7 +7,8 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
-	<artifactId>services-acceptance-test</artifactId>
+	<artifactId>services-acceptance-test
+	</artifactId>
 	<name>Acceptance Tests</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
@@ -19,6 +20,31 @@
 					<source>1.5</source>
 					<target>1.5</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin
+				</artifactId>
+				<executions>
+					<execution>
+						<id>copy-index</id>
+						<phase>process-test-resources</phase>
+						<goals>
+							<goal>testResources</goal>
+						</goals>
+						<configuration>
+							<resources>
+								<resource>
+									<directory>src/test/resources/</directory>
+									<includes>
+										<include>index.html</include>
+									</includes>
+								</resource>
+							</resources>
+							<outputDirectory>target/concordion/</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
