@@ -8,6 +8,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <description>Shop As A Service</description>
   <modules>
+    <module>domain</module>
+    <module>services</module>
+    <module>services-acceptance-test</module>
     <module>web</module>
     <module>web-integration-test</module>
   </modules>
