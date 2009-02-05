@@ -1,4 +1,4 @@
-package shopaas;
+package shopaas.web;
 
 import org.mortbay.jetty.Connector;
 import org.mortbay.jetty.Server;

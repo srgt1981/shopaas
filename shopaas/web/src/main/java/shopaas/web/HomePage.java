@@ -1,4 +1,4 @@
-package shopaas;
+package shopaas.web;
 
 import org.apache.wicket.PageParameters;
 import org.apache.wicket.markup.html.basic.Label;
