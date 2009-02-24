@@ -6,7 +6,6 @@
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Domain</name>
-	<url>http://jmbeas.blogspot.com</url>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
