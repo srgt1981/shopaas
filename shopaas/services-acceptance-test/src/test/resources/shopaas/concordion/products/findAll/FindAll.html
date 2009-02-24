@@ -1,0 +1,70 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="../../../../concordion.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h1>Listar productos</h1>
+
+	<div class="userstory">
+	<dl>
+		<dt>US-Productos-1</dt>
+		<dd>Un visitante puede ver todos los productos a la venta del catálogo. Por tanto, hay productos que están a la venta y otros que no lo están.</dd>
+	</dl>
+	</div>
+	
+
+    <div class="example">
+
+        <h3>Listar productos a la venta</h3>
+        
+	    <p class="commentary">
+	     La tienda muestra todos los productos del catálogo que están a la venta.
+	    </p>
+
+        <p>
+        	Dado el siguiente <span concordion:execute="givenAnEmptyCatalogue()">catálogo de productos</span>:
+        </p>        
+        	<table concordion:execute="addProductToCatalogue(#ref,#name,#isOnSale)">
+        	<tr>
+        	<th concordion:set="#ref">REF</th>
+        	<th concordion:set="#name">NOMBRE</th>
+        	<th concordion:set="#isOnSale">A LA VENTA</th>
+        	</tr>
+        	<tr><td>(L1)</td><td>User Stories Applied</td><td>true</td></tr>
+        	<tr><td>(L2)</td><td>SOA Design Patterns</td><td>false</td></tr>
+        	<tr><td>(B1)</td><td>Coca-Cola 0.33 cl</td><td>true</td></tr>
+        	<tr><td>(B2)</td><td>Fanta 0.33 cl</td><td>true</td></tr>
+        	<tr><td>(B3)</td><td>Coca-Cola 0.50 cl</td><td>false</td></tr>
+        	</table>
+        <p>
+            Cuando listamos todos los productos a la venta entonces obtenemos lo siguiente (ordenado por REF):
+        </p>
+        	<table concordion:verifyRows="#ref : findAllProductsOnSale()">
+        	<tr><th concordion:assertEquals="#ref">REF</th></tr>
+        	<tr><td>(B1)</td></tr>
+        	<tr><td>(B2)</td></tr>
+        	<tr><td>(L1)</td></tr>
+        	</table>
+        
+    </div>
+
+	<div class="idea">
+	<h2>Más detalles</h2>
+	<ul>
+	<li><a href="EmptyCatalogue.html">¿Qué pasa si el catálogo está vacío?</a></li>
+	<li>¿Qué pasa si el catálogo no está vacío pero no hay ningún producto a la venta?</li>
+	</ul>
+	</div>
+	
+	<div class="idea">
+	<h2>Para más adelante</h2>
+	<ul>
+	<li>Los productos pueden estar a la venta durante un período de tiempo</li>
+	<li>Los productos pueden estar categorizados/etiquetados</li>
+	</ul>
+	</div>
+	
+</body>
+</html>
