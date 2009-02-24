@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-	<parent>
-		<artifactId>shopaas</artifactId>
-		<groupId>shopaas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
 	<artifactId>services-acceptance-test
 	</artifactId>
 	<name>Acceptance Tests</name>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<build>
 		<plugins>
 			<plugin>
@@ -19,6 +15,14 @@
 				<configuration>
 					<source>1.5</source>
 					<target>1.5</target>
+					<!-- 
+					<includes>
+						<include>${project.build.sourceDirectory}/**/*.java
+						</include>
+						<include>${project.build.directory}/generated-src/**/*.java
+						</include>
+					</includes>
+					-->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -38,10 +42,12 @@
 									<directory>src/test/resources/</directory>
 									<includes>
 										<include>index.html</include>
+										<include>concordion.css</include>
 									</includes>
 								</resource>
 							</resources>
-							<outputDirectory>target/concordion/</outputDirectory>
+							<outputDirectory>${project.build.directory}/concordion/
+							</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
@@ -53,13 +59,108 @@
 					<systemProperties>
 						<property>
 							<name>concordion.output.dir</name>
-							<value>target/concordion</value>
+							<value>${project.build.directory}/concordion/
+							</value>
 						</property>
 					</systemProperties>
 				</configuration>
 			</plugin>
+			<!--
+						<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<configuration>
+							<tasks>
+								<copy todir="${project.build.directory}/generated-src/">
+									<fileset dir="../services/src/main/java/" />
+								</copy>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			-->
+						<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-services-src</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<tasks>
+								<copy todir="${project.build.sourceDirectory}">
+									<fileset dir="../services/src/main/java/" />
+								</copy>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>clean-services-src</id>
+						<phase>clean</phase>
+						<configuration>
+							<tasks>
+								<delete dir="${project.build.sourceDirectory}/shopaas/services/"/>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+					
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin
+				</artifactId>
+				<configuration>
+					<instrumentation>
+						<includes>
+							<include>shopaas/services/**/*.class
+							</include>
+						</includes>
+					</instrumentation>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
+	<reporting>
+<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>project-team</report>
+              <report>mailing-list</report>
+              <report>cim</report>
+              <report>issue-tracking</report>
+              <report>license</report>
+              <report>scm</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+	</reporting>
 	<dependencies>
 		<dependency>
 			<groupId>org.concordion</groupId>
@@ -74,10 +175,20 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>2.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>shopaas</groupId>
 			<artifactId>services</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>shopaas</groupId>
+			<artifactId>domain</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
