@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="shopaas">
-  <bannerLeft>
-    <name>shopaas</name>
-  </bannerLeft>
-  <bannerRight>
-    <src>http://maven.apache.org/images/maven-small.gif</src>
-  </bannerRight>
+<project name="services-acceptance-test">
+
   <body>
     <links>
       <item name="Maven 2" href="http://maven.apache.org/"/>
@@ -25,7 +20,5 @@
 
     <menu ref="reports"/>
 
-	<menu ref="modules" />
-	
   </body>
 </project>
