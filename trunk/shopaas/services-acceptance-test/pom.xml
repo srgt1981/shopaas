@@ -140,6 +140,15 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
+			<plugin>
+				<groupId>org.concordion</groupId>
+				<artifactId>maven-concordion-plugin</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<concordionOutputDirectory>${project.build.directory}/concordion/
+					</concordionOutputDirectory>
+				</configuration>
+			</plugin>
 		</plugins>
 	</reporting>
 	<dependencies>
