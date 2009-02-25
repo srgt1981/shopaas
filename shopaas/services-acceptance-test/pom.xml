@@ -95,6 +95,7 @@
 							</value>
 						</property>
 					</systemProperties>
+					<argLine>-Xmx128m</argLine>
 				</configuration>
 			</plugin>
 			<plugin>
