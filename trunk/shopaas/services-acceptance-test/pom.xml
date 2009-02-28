@@ -7,6 +7,11 @@
 	<name>Acceptance Tests</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<parent>
+		<artifactId>shopaas</artifactId>
+		<groupId>shopaas</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 	<build>
 		<plugins>
 			<plugin>
