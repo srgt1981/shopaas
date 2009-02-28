@@ -8,6 +8,15 @@
 	<name>Parent</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Shop As A Service</description>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>2.0-beta-6</version>
+			</plugin>
+		</plugins>
+	</build>
 	<modules>
 		<module>domain</module>
 		<module>services</module>
