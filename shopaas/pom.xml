@@ -9,9 +9,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Shop As A Service</description>
 	<scm>
+		<url>https://shopaas.googlecode.com/svn/trunk/shopaas</url>
 		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas</connection>
 		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas</developerConnection>
-		<url>http://code.google.com/p/shopaas/source/browse</url>
 	</scm>
 	<build>
 		<plugins>
@@ -23,7 +23,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.0-beta-6</version>
+				<version>2.0-beta-8</version>
 				<configuration>
 					<tagBase>https://shopaas.googlecode.com/svn/tags/releases/shopaas/</tagBase>
 				</configuration>
