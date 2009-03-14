@@ -1,0 +1,35 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="../../../../concordion.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h1>Listar productos : Catálogo vacío</h1>
+
+	<div class="userstory">
+	<dl>
+		<dt>US-Productos-1</dt>
+		<dd>Un visitante puede ver todos los productos a la venta del catálogo. Por tanto, hay productos que están a la venta y otros que no lo están.</dd>
+	</dl>
+	</div>
+	
+
+    <div class="example">
+
+        <h3>Catálogo vacío</h3>
+        
+	    <p class="commentary">
+	     El catálogo está vacío en el momento de realizar la consulta.
+	    </p>
+
+        <p>
+        	Dado que <span concordion:execute="givenAnEmptyCatalogue()">el catálogo está vacío</span>,
+            cuando listamos todos los productos a la venta entonces obtenemos 
+            una <span concordion:assertTrue="isCatalogueEmpty()">lista de productos vacía</span>.
+        </p>
+        
+    </div>
+
+</body>
+</html>
