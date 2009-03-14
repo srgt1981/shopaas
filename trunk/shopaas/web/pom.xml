@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-	<parent>
-		<artifactId>shopaas</artifactId>
-		<groupId>shopaas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
 	<artifactId>web</artifactId>
@@ -12,14 +7,16 @@
 	<name>Web Application</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>UI wicket para Shop As A Service</description>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt
-			</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+	<parent>
+		<artifactId>shopaas</artifactId>
+		<groupId>shopaas</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<scm>
+		<url>http://code.google.com/p/shopaas/source/browse/web</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/web</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/web</developerConnection>
+	</scm>	
 	<build>
 		<finalName>shopaas-web</finalName>
 		<resources>

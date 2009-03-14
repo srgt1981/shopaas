@@ -6,6 +6,16 @@
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Domain</name>
+	<parent>
+		<artifactId>shopaas</artifactId>
+		<groupId>shopaas</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<scm>
+		<url>http://code.google.com/p/shopaas/source/browse/domain</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/domain</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/domain</developerConnection>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -57,11 +67,6 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
-	<parent>
-		<artifactId>shopaas</artifactId>
-		<groupId>shopaas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
 	<build>
 		<plugins>
 			<plugin>

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-	<parent>
-		<artifactId>shopaas</artifactId>
-		<groupId>shopaas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
 	<artifactId>services</artifactId>
 	<name>Services</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<parent>
+		<artifactId>shopaas</artifactId>
+		<groupId>shopaas</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<scm>
+		<url>http://code.google.com/p/shopaas/source/browse/services</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/services</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/services</developerConnection>
+	</scm>	
 	<build>
 		<plugins>
 			<plugin>
