@@ -8,7 +8,7 @@
 	<parent>
 		<artifactId>shopaas</artifactId>
 		<groupId>shopaas</groupId>
-		<version>0.0.1</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 	<build>
 		<finalName>shopaas-web</finalName>
