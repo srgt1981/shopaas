@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>shopaas</groupId>
 	<artifactId>web</artifactId>
 	<packaging>war</packaging>
 	<name>Web Application</name>
-	<version>0.0.1-SNAPSHOT</version>
 	<description>UI wicket para Shop As A Service</description>
 	<parent>
 		<artifactId>shopaas</artifactId>
 		<groupId>shopaas</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<scm>
-		<url>https://shopaas.googlecode.com/svn/trunk/shopaas/web</url>
-		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/web</connection>
-		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/web</developerConnection>
-	</scm>	
 	<build>
 		<finalName>shopaas-web</finalName>
 		<resources>
