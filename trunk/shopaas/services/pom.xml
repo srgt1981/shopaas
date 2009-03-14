@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
 	<artifactId>services</artifactId>
 	<name>Services</name>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<parent>
 		<artifactId>shopaas</artifactId>
 		<groupId>shopaas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 	</parent>
 	<scm>
-		<url>http://code.google.com/p/shopaas/source/browse/services</url>
-		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/services</connection>
-		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/services</developerConnection>
+		<url>scm:svn:https://shopaas.googlecode.com/svn/tags/releases/shopaas-0.0.1/services</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/tags/releases/shopaas-0.0.1/services</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/tags/releases/shopaas-0.0.1/services</developerConnection>
 	</scm>	
 	<build>
 		<plugins>
@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>shopaas</groupId>
 			<artifactId>domain</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
 </project>
