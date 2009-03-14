@@ -1,15 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
 	<artifactId>shopaas</artifactId>
 	<packaging>pom</packaging>
 	<name>Parent</name>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<description>Shop As A Service</description>
 	<scm>
-		<connection>scm:svn:http://shopaas.googlecode.com/svn/tags/shopaas-0.0.1</connection>
-		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/tags/shopaas-0.0.1</developerConnection>
-		<url>http://code.google.com/p/shopaas/source/browse/tags/shopaas-0.0.1</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas</developerConnection>
+		<url>http://code.google.com/p/shopaas/source/browse</url>
 	</scm>
 	<build>
 		<plugins>
