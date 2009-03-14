@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>web-integration-test</artifactId>
 	<packaging>pom</packaging>
@@ -6,18 +7,18 @@
 	<parent>
 		<groupId>shopaas</groupId>
 		<artifactId>shopaas</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<scm>
-		<url>https://shopaas.googlecode.com/svn/tags/shopaas-0.0.1/web-integration-test</url>
-		<connection>scm:svn:http://shopaas.googlecode.com/svn/tags/shopaas-0.0.1/web-integration-test</connection>
-		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/tags/shopaas-0.0.1/web-integration-test</developerConnection>
+		<url>https://shopaas.googlecode.com/svn/trunk/shopaas/web-integration-test</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/web-integration-test</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/web-integration-test</developerConnection>
 	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>shopaas</groupId>
 			<artifactId>web</artifactId>
-			<version>0.0.1</version>
+			<version>0.0.1-SNAPSHOT</version>
 			<type>war</type>
 		</dependency>
 		<dependency>
