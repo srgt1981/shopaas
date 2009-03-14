@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopaas</groupId>
 	<artifactId>services-acceptance-test
 	</artifactId>
 	<name>Acceptance Tests</name>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<parent>
 		<artifactId>shopaas</artifactId>
 		<groupId>shopaas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 	</parent>
 	<scm>
-		<url>http://code.google.com/p/shopaas/source/browse/services-acceptance-test</url>
-		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/services-acceptance-test</connection>
-		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/services-acceptance-test</developerConnection>
+		<url>scm:svn:https://shopaas.googlecode.com/svn/tags/releases/shopaas-0.0.1/services-acceptance-test</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/tags/releases/shopaas-0.0.1/services-acceptance-test</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/tags/releases/shopaas-0.0.1/services-acceptance-test</developerConnection>
 	</scm>
 	<build>
 		<plugins>
@@ -183,12 +183,12 @@
 		<dependency>
 			<groupId>shopaas</groupId>
 			<artifactId>services</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>shopaas</groupId>
 			<artifactId>domain</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
 </project>
