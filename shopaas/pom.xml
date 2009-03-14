@@ -8,12 +8,25 @@
 	<name>Parent</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Shop As A Service</description>
+	<scm>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/</developerConnection>
+		<url>http://code.google.com/p/shopaas/source/browse</url>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>2.0-beta-6</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0-beta-8</version>
+				<configuration>
+					<tagBase>https://shopaas.googlecode.com/svn/tags/</tagBase>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
