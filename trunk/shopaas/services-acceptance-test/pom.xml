@@ -13,7 +13,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<scm>
-		<url>http://code.google.com/p/shopaas/source/browse/services-acceptance-test</url>
+		<url>https://shopaas.googlecode.com/svn/trunk/shopaas/services-acceptance-test</url>
 		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/services-acceptance-test</connection>
 		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/services-acceptance-test</developerConnection>
 	</scm>

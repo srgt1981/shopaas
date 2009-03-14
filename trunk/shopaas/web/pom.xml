@@ -13,7 +13,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<scm>
-		<url>http://code.google.com/p/shopaas/source/browse/web</url>
+		<url>https://shopaas.googlecode.com/svn/trunk/shopaas/web</url>
 		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/web</connection>
 		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/web</developerConnection>
 	</scm>	
