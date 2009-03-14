@@ -10,7 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<scm>
-		<url>http://code.google.com/p/shopaas/source/browse/web-integration-test</url>
+		<url>https://shopaas.googlecode.com/svn/trunk/shopaas/web-integration-test</url>
 		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas/web-integration-test</connection>
 		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas/web-integration-test</developerConnection>
 	</scm>
