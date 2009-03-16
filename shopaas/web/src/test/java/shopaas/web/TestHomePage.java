@@ -31,4 +31,12 @@ public class TestHomePage {
 				.assertLabel("message",
 						"If you see this message wicket is properly configured and running");
 	}
+	
+	@Test
+	public void testLinkToProductReport() {
+		tester.startPage(HomePage.class);
+		tester.assertRenderedPage(HomePage.class);
+		tester.clickLink("ProductReport");
+		tester.assertRenderedPage(ProductReportPage.class);
+	}
 }
