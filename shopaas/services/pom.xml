@@ -7,7 +7,7 @@
 	<parent>
 		<artifactId>shopaas</artifactId>
 		<groupId>shopaas</groupId>
-		<version>0.0.2-SNAPSHOT</version>
+		<version>0.0.2</version>
 	</parent>
 	<build>
 		<plugins>
@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>shopaas</groupId>
 			<artifactId>domain</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 	</dependencies>
 </project>
