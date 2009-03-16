@@ -5,13 +5,13 @@
 	<artifactId>shopaas</artifactId>
 	<packaging>pom</packaging>
 	<name>Parent</name>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<description>Shop As A Service</description>
 	<url>http://code.google.com/p/shopaas/</url>
 	<scm>
-		<url>https://shopaas.googlecode.com/svn/trunk/shopaas</url>
-		<connection>scm:svn:http://shopaas.googlecode.com/svn/trunk/shopaas</connection>
-		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/trunk/shopaas</developerConnection>
+		<url>https://shopaas.googlecode.com/svn/tags/shopaas-0.0.2</url>
+		<connection>scm:svn:http://shopaas.googlecode.com/svn/tags/shopaas-0.0.2</connection>
+		<developerConnection>scm:svn:https://shopaas.googlecode.com/svn/tags/shopaas-0.0.2</developerConnection>
 	</scm>
 	<build>
 		<plugins>
